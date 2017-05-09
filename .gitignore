@@ -3,7 +3,7 @@
 ### Angular ###
 ## Angular ##
 # compiled output
-/dist
+# /dist
 /tmp
 /app/**/*.js
 /app/**/*.js.map
@@ -187,7 +187,7 @@ __pycache__/
 env/
 build/
 develop-eggs/
-dist/
+# dist/
 downloads/
 eggs/
 .eggs/
