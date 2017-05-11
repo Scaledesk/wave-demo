@@ -15,7 +15,7 @@
   <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
   <meta name="mobile-web-app-capable" content="yes">
   <link rel="shortcut icon" sizes="196x196" href="../assets/images/logo.png">
-  
+
   <!-- style -->
   <link rel="stylesheet" href="../assets/animate.css/animate.min.css" type="text/css" />
   <link rel="stylesheet" href="../assets/glyphicons/glyphicons.css" type="text/css" />
@@ -27,6 +27,8 @@
   <link rel="stylesheet" href="../assets/styles/app.css" type="text/css" />
   <!-- endbuild -->
   <link rel="stylesheet" href="../assets/styles/font.css" type="text/css" />
+    <!-- custom-->
+  <link rel="stylesheet" href="../assets/styles/custom.css" type="text/css" />
 </head>
 <body>
   <div class="app" id="app">
@@ -48,12 +50,12 @@
       </div>
       <div class="hide-scroll" data-flex>
           <nav class="scroll nav-light">
-            
+
               <ul class="nav" ui-nav>
                 <li class="nav-header hidden-folded">
                   <small class="text-muted">Main</small>
                 </li>
-                
+
                 <li>
                   <a href="dashboard.html" >
                     <span class="nav-icon">
@@ -64,7 +66,7 @@
                     <span class="nav-text">Dashboard</span>
                   </a>
                 </li>
-            
+
                 <li>
                   <a>
                     <span class="nav-caret">
@@ -98,7 +100,7 @@
                     </li>
                   </ul>
                 </li>
-            
+
                 <li>
                   <a>
                     <span class="nav-caret">
@@ -129,7 +131,7 @@
                     </li>
                   </ul>
                 </li>
-            
+
                 <li>
                   <a href="widget.html" >
                     <span class="nav-icon">
@@ -140,11 +142,11 @@
                     <span class="nav-text">Widgets</span>
                   </a>
                 </li>
-            
+
                 <li class="nav-header hidden-folded">
                   <small class="text-muted">Components</small>
                 </li>
-            
+
                 <li>
                   <a>
                     <span class="nav-caret">
@@ -248,7 +250,7 @@
                     </li>
                   </ul>
                 </li>
-            
+
                 <li>
                   <a>
                     <span class="nav-caret">
@@ -335,7 +337,7 @@
                     </li>
                   </ul>
                 </li>
-            
+
                 <li>
                   <a>
                     <span class="nav-caret">
@@ -391,7 +393,7 @@
                     </li>
                   </ul>
                 </li>
-            
+
                 <li>
                   <a>
                     <span class="nav-caret">
@@ -490,17 +492,17 @@
                     </li>
                   </ul>
                 </li>
-            
+
                 <li class="nav-header hidden-folded">
                   <small class="text-muted">Help</small>
                 </li>
-                
+
                 <li class="hidden-folded" >
                   <a href="docs.html" >
                     <span class="nav-text">Documents</span>
                   </a>
                 </li>
-            
+
               </ul>
           </nav>
       </div>
@@ -520,7 +522,7 @@
     </div>
   </div>
   <!-- / -->
-  
+
   <!-- content -->
   <div id="content" class="app-content box-shadow-z0" role="main">
     <div class="app-header white box-shadow">
@@ -530,10 +532,10 @@
               <i class="material-icons">&#xe5d2;</i>
             </a>
             <!-- / -->
-        
+
             <!-- Page title - Bind to $state's title -->
             <div class="mb-0 h5 no-wrap" ng-bind="$state.current.data.title" id="pageTitle"></div>
-        
+
             <!-- navbar collapse -->
             <div class="collapse navbar-collapse" id="collapse">
               <!-- link and dropdown -->
@@ -546,12 +548,12 @@
                   <div ui-include="'../views/blocks/dropdown.new.html'"></div>
                 </li>
               </ul>
-        
+
               <div ui-include="'../views/blocks/navbar.form.html'"></div>
               <!-- / -->
             </div>
             <!-- / navbar collapse -->
-        
+
             <!-- navbar right -->
             <ul class="nav navbar-nav ml-auto flex-row">
               <li class="nav-item dropdown pos-stc-xs">
@@ -618,7 +620,7 @@
       </div>
     </div>
   </div>
-  <div class="col-sm-9 col-lg-10 light lt">
+  <div class="col-sm-9 col-lg-10 lt">
     <div class="tab-content pos-rlt">
       <div class="tab-pane active" id="tab-1">
         <div class="p-a-md dker _600">Public profile</div>
@@ -626,16 +628,19 @@
         <form role="form" class="p-a-md col-xs-12">
           <div class="row form-group">
             <div class="col-md-6">
-
-                <label>First Name</label>
+              <div class="form-control-width">
+                <label>Name</label>
                 <input type="text" class="form-control">
+                </div>
               </div>
 
 
             <div class="col-md-6">
+              <div class="form-control-width">
 
-                <label>First Name</label>
+                <label>Email</label>
                 <input type="text" class="form-control">
+                </div>
               </div>
 
 
@@ -643,16 +648,19 @@
 
           <div class="row form-group">
             <div class="col-md-6">
-
-              <label>First Name</label>
+              <div class="form-control-width">
+              <label>Tenant Email  </label>
               <input type="text" class="form-control">
+              </div>
             </div>
 
 
             <div class="col-md-6">
+              <div class="form-control-width">
 
-              <label>First Name</label>
+              <label>Tenant Name</label>
               <input type="text" class="form-control">
+                </div>
             </div>
 
 
@@ -661,22 +669,28 @@
 
           <div class="row form-group">
             <div class="col-md-4">
+              <div class="form-control-width">
 
-              <label>First Name</label>
+              <label>Tenant No </label>
               <input type="text" class="form-control">
+                </div>
             </div>
 
 
             <div class="col-md-4">
+              <div class="form-control-width">
 
-              <label>First Name</label>
+              <label>Tenant Phone No </label>
               <input type="text" class="form-control">
+                </div>
             </div>
 
             <div class="col-md-4">
+              <div class="form-control-width">
 
-              <label>First Name</label>
+              <label>Flat No</label>
               <input type="text" class="form-control">
+                </div>
             </div>
 
 
@@ -684,22 +698,28 @@
 
           <div class="row form-group">
             <div class="col-md-4">
+              <div class="form-control-width">
 
-              <label>First Name</label>
+              <label>Flat Category</label>
               <input type="text" class="form-control">
+                </div>
             </div>
 
 
             <div class="col-md-4">
+              <div class="form-control-width">
 
-              <label>First Name</label>
+              <label>Grid Meter No</label>
               <input type="text" class="form-control">
+                </div>
             </div>
 
             <div class="col-md-4">
+              <div class="form-control-width">
 
-              <label>First Name</label>
+              <label>Dg Meter No</label>
               <input type="text" class="form-control">
+                </div>
             </div>
 
 
@@ -708,42 +728,33 @@
 
           <div class="row form-group">
             <div class="col-md-6">
+              <div class="form-control-width">
 
-              <label>First Name</label>
+              <label>Vehicle No </label>
               <input type="text" class="form-control">
+                </div>
             </div>
 
 
             <div class="col-md-6">
+              <div class="form-control-width">
 
-              <label>First Name</label>
+              <label>Tenant Vehicle No</label>
               <input type="text" class="form-control">
+                </div>
             </div>
 
 
           </div>
 
 
-
-
-          <div class="form-group">
-            <label>URL</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="form-group">
-            <label>Company</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="form-group">
-            <label>Location</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="checkbox">
+         <!-- <div class="checkbox">
             <label class="ui-check">
               <input type="checkbox"><i class="dark-white"></i> Available for hire
             </label>
-          </div>
+          </div>--><div class="m-l-10">
           <button type="submit" class="btn btn-info m-t">Update</button>
+          </div>
         </form>
         </div>
       </div>
@@ -808,31 +819,58 @@
       </div>
       <div class="tab-pane" id="tab-5">
         <div class="p-a-md dker _600">Security</div>
-        <div class="p-a-md">
-          <div class="clearfix m-b-lg">
-            <div class="box">
-            <form role="form" class="col-xs-12 p-a-0">
-              <div class="form-group">
-                <label>Old Password</label>
-                <input type="password" class="form-control">
+        <div class="box">
+          <form role="form" class="p-a-md col-xs-12">
+            <div class="row form-group">
+              <div class="col-md-12">
+                <div class="form-control-width">
+                  <label>Old Password</label>
+                  <input type="password" class="form-control">
+                </div>
               </div>
-              <div class="form-group">
-                <label>New Password</label>
-                <input type="password" class="form-control">
+
+
+            </div>
+
+            <div class="row form-group">
+              <div class="col-md-12">
+                <div class="form-control-width">
+                  <label>New Password</label>
+                  <input type="password" class="form-control">
+                </div>
               </div>
-              <div class="form-group">
-                <label>New Password Again</label>
-                <input type="password" class="form-control">
+
+
+            </div>
+
+
+            <div class="row form-group">
+              <div class="col-md-12">
+                <div class="form-control-width">
+                  <label>New Password Again</label>
+                  <input type="password" class="form-control">
+                </div>
               </div>
-              <button type="submit" class="btn btn-info m-t">Update</button>
-            </form>
-              </div>
+
+
+
+            </div>
+
+
+            <!-- <div class="checkbox">
+               <label class="ui-check">
+                 <input type="checkbox"><i class="dark-white"></i> Available for hire
+               </label>
+             </div>--><div class="m-l-10">
+            <button type="submit" class="btn btn-info m-t">Update</button>
+
+
+            <p style="margin-top: 20px;"><strong>Delete account?</strong></p>
+            <button type="submit" class="btn btn-danger m-t" data-toggle="modal" data-target="#modal">Delete Account</button>
           </div>
-
-          <p><strong>Delete account?</strong></p>
-          <button type="submit" class="btn btn-danger m-t" data-toggle="modal" data-target="#modal">Delete Account</button>
-
+          </form>
         </div>
+
       </div>
     </div>
   </div>
@@ -845,7 +883,7 @@
     <div class="row-cell v-m">
       <div class="modal-dialog modal-sm">
         <div class="modal-content flip-y">
-          <div class="modal-body text-center">          
+          <div class="modal-body text-center">
             <p class="p-y m-t"><i class="fa fa-remove text-warning fa-3x"></i></p>
             <p>Are you sure to delete your account?</p>
           </div>
@@ -950,7 +988,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="switcher box-color black lt" id="sw-demo">
       <a href ui-toggle-class="active" target="#sw-demo" class="box-color black lt text-color sw-btn">
         <i class="fa fa-list text-white"></i>
@@ -989,7 +1027,7 @@
             class="p-a col-sm-6 info">
             <span class="text-white">Five</span>
           </a>
-          <div 
+          <div
             class="p-a col-sm-6 lter">
             <span class="text">...</span>
           </div>
