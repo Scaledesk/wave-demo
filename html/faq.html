@@ -27,46 +27,51 @@
   <link rel="stylesheet" href="../assets/styles/app.css" type="text/css" />
   <!-- endbuild -->
   <link rel="stylesheet" href="../assets/styles/font.css" type="text/css" />
+
+  <!-- custom -->
+  <link rel="stylesheet" href="../assets/styles/custom.css" type="text/css" />
 </head>
 <body>
   <div class="app" id="app">
 
 <!-- ############ LAYOUT START-->
 
-  <!-- aside -->
-  <div id="aside" class="app-aside modal nav-dropdown">
-  	<!-- fluid app aside -->
-    <div class="left navside dark dk" data-layout="column">
-  	  <div class="navbar no-radius">
-        <!-- brand -->
-        <a class="navbar-brand">
-        	<div ui-include="'../assets/images/logo.svg'"></div>
-        	<img src="../assets/images/logo.png" alt="." class="hide">
-        	<span class="hidden-folded inline">Wave Smart City</span>
-        </a>
-        <!-- / brand -->
-      </div>
-      <div class="hide-scroll" data-flex>
+    <!-- aside -->
+    <div id="aside" class="app-aside modal nav-dropdown">
+      <!-- fluid app aside -->
+      <div class="left navside dark dk" data-layout="column">
+        <div class="navbar no-radius">
+          <!-- brand -->
+          <a class="navbar-brand">
+            <div ui-include="'../assets/images/logo.svg'"></div>
+            <img src="../assets/images/logo.png" alt="." class="hide">
+            <span class="hidden-folded inline">Wave Smart City</span>
+          </a>
+          <!-- / brand -->
+        </div>
+        <div class="hide-scroll" data-flex>
           <nav class="scroll nav-light">
-            
-              <ul class="nav" ui-nav>
-                <li class="nav-header hidden-folded">
-                  <small class="text-muted">Main</small>
-                </li>
-                
-                <li>
-                  <a href="dashboard.html" >
+
+            <ul class="nav" ui-nav>
+              <li class="nav-header hidden-folded">
+                <small class="text-muted">Main</small>
+              </li>
+
+              <li>
+                <a href="dashboard.html" >
                     <span class="nav-icon">
                       <i class="material-icons">&#xe3fc;
                         <span ui-include="'../assets/images/i_0.svg'"></span>
                       </i>
                     </span>
-                    <span class="nav-text">Home</span>
-                  </a>
-                </li>
-            
-                <li>
-                  <a>
+                  <span class="nav-text">Home</span>
+                </a>
+              </li>
+
+
+
+              <li>
+                <a>
                     <span class="nav-caret">
                       <i class="fa fa-caret-down"></i>
                     </span>
@@ -78,47 +83,47 @@
                         <span ui-include="'../assets/images/i_1.svg'"></span>
                       </i>
                     </span>
-                    <span class="nav-text">Bills &amp; Payments</span>
-                  </a>
-                  <ul class="nav-sub">
-                    <li>
-                      <a href="bill-dashboard.html" >
-                        <span class="nav-text">Pay Now</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="bill-dashboard.html" >
-                        <span class="nav-text">Elerticity</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="bill-dashboard.html" >
-                        <span class="nav-text">Water</span>
-                      </a>
-                    </li>
-                    
-                    <li>
-                      <a href="bill-dashboard.html" >
-                        <span class="nav-text">Phone</span>
-                      </a>
-                    </li>
-                    
-                    <li>
-                      <a href="bill-dashboard.html" >
-                        <span class="nav-text">Internet Services</span>
-                      </a>
-                    </li>
-                    
-                    <li>
-                      <a href="bill-dashboard.html" >
-                        <span class="nav-text">Other</span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-            
-                <li>
-                  <a>
+                  <span class="nav-text">Bills &amp; Payments</span>
+                </a>
+                <ul class="nav-sub">
+                  <li>
+                    <a href="bill-dashboard.html" >
+                      <span class="nav-text">Pay Now</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="bill-dashboard.html" >
+                      <span class="nav-text">Elerticity</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="bill-dashboard.html" >
+                      <span class="nav-text">Water</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="bill-dashboard.html" >
+                      <span class="nav-text">Phone</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="bill-dashboard.html" >
+                      <span class="nav-text">Internet Services</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="bill-dashboard.html" >
+                      <span class="nav-text">Other</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a>
                     <span class="nav-caret">
                       <i class="fa fa-caret-down"></i>
                     </span>
@@ -127,36 +132,36 @@
                         <span ui-include="'../assets/images/i_2.svg'"></span>
                       </i>
                     </span>
-                    <span class="nav-text">Complaints </span>
-                  </a>
-                  <ul class="nav-sub">
-                   <li>
-                      <a href="complaint-form.html" >
-                        <span class="nav-text">Raise New Complaint</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="complaint-dashboard.html" >
-                        <span class="nav-text">Complaints Overview</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="complaint-dashboard.html" >
-                        <span class="nav-text">Resolutions / Updates</span>
-                      </a>
-                    </li>
-<!--
-                    <li>
-                      <a href="footers.html" >
-                        <span class="nav-text">Footer</span>
-                      </a>
-                    </li>
--->
-                  </ul>
-                </li>
-            
-                <li>
-                  <a href="notifications.hmtl" >
+                  <span class="nav-text">Complaints </span>
+                </a>
+                <ul class="nav-sub">
+                  <li>
+                    <a href="complaint-form.html" >
+                      <span class="nav-text">Raise New Complaint</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="complaint-dashboard.html" >
+                      <span class="nav-text">Complaints Overview</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="complaint-dashboard.html" >
+                      <span class="nav-text">Resolutions / Updates</span>
+                    </a>
+                  </li>
+                  <!--
+                                      <li>
+                                        <a href="footers.html" >
+                                          <span class="nav-text">Footer</span>
+                                        </a>
+                                      </li>
+                  -->
+                </ul>
+              </li>
+
+              <li>
+                <a href="notifications.hmtl" >
                    <span class="nav-label">
                       <b class="label rounded label-sm accent">5</b>
                     </span>
@@ -165,22 +170,33 @@
                         <span ui-include="'../assets/images/i_3.svg'"></span>
                       </i>
                     </span>
-                    <span class="nav-text">Notifications</span>
-                    
-                  </a>
-                </li>
-            
-                <li class="nav-header hidden-folded">
-                  <small class="text-muted">News &amp; Updates</small>
-                </li>
-            
-                <li>
+                  <span class="nav-text">Notifications</span>
+
+                </a>
+              </li>
+
+              <li>
+                <a href="setting_copy.html" >
+                    <span class="nav-icon">
+                       <i class="material-icons">&#xe429;
+                        <span ui-include="'../assets/images/i_4.svg'"></span>
+                      </i>
+                    </span>
+                  <span class="nav-text">Settings</span>
+                </a>
+              </li>
+
+              <li class="nav-header hidden-folded">
+                <small class="text-muted">News &amp; Updates</small>
+              </li>
+
+              <!--   <li>
                   <a href="events.html">
-<!--
+
                     <span class="nav-caret">
                       <i class="fa fa-caret-down"></i>
                     </span>
--->
+
                     <span class="nav-label">
                       <b class="label label-sm accent">8</b>
                     </span>
@@ -191,160 +207,66 @@
                     </span>
                     <span class="nav-text">Wave Events</span>
                   </a>
-<!--
-                  <ul class="nav-sub nav-mega nav-mega-3">
-                    <li>
-                      <a href="arrow.html" >
-                        <span class="nav-text">Arrow</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="box.html" >
-                        <span class="nav-text">Box</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="button.html" >
-                        <span class="nav-text">Button</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="color.html" >
-                        <span class="nav-text">Color</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="dropdown.html" >
-                        <span class="nav-text">Dropdown</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="grid.html" >
-                        <span class="nav-text">Grid</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="icon.html" >
-                        <span class="nav-text">Icon</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="label.html" >
-                        <span class="nav-text">Label</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="list.html" >
-                        <span class="nav-text">List Group</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="modal.html" >
-                        <span class="nav-text">Modal</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="nav.html" >
-                        <span class="nav-text">Nav</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="progress.html" >
-                        <span class="nav-text">Progress</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="social.html" >
-                        <span class="nav-text">Social</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="sortable.html" >
-                        <span class="nav-text">Sortable</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="streamline.html" >
-                        <span class="nav-text">Streamline</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="timeline.html" >
-                        <span class="nav-text">Timeline</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="map.vector.html" >
-                        <span class="nav-text">Vector Map</span>
-                      </a>
-                    </li>
-                  </ul>
--->
-                </li>
-            
-                <li>
-                  <a>
+
+                </li> -->
+
+              <li>
+                <a>
                     <span class="nav-caret">
                       <i class="fa fa-caret-down"></i>
                     </span>
-                    <span class="nav-label"><b class="label no-bg">9</b></span>
+                  <span class="nav-label"><b class="label no-bg">9</b></span>
                     <span class="nav-icon">
                       <i class="material-icons">&#xe3e8;
                         <span ui-include="'../assets/images/i_5.svg'"></span>
                       </i>
                     </span>
-                    <span class="nav-text">Wave City News</span>
-                  </a>
-                  <ul class="nav-sub nav-mega">
-                    <li>
-                      <a target="_blank" href="http://www.wavecity.in/wave-galleria/overview" >
-                        <span class="nav-text">Wave Galleria</span>
-                      </a>
-                    </li>
-                    
-                    <li>
-                      <a href="http://www.wavecity.in/print" >
-                        <span class="nav-text">Wave Times</span>
-                      </a>
-                    </li>
-                    
-                    <li>
-                      <a href="http://www.wavecity.in/blogs" >
-                        <span class="nav-text">Wave Blogs</span>
-                      </a>
-                    </li>
-                    
-                    <li>
-                      <a href="http://www.wavecity.in/plots/overview" >
-                        <span class="nav-text">Plots</span>
-                      </a>
-                    </li>
-                    
-                    <li>
-                      <a href="http://www.wavecity.in/news-press" >
-                        <span class="nav-text">Sports</span>
-                      </a>
-                    </li>
-                    
-                    <li>
-                      <a href="http://www.wavecity.in/news-press" >
-                        <span class="nav-text">Temple</span>
-                      </a>
-                    </li>
-                    
-                    <li>
-                      <a href="http://www.wavecity.in/news-press" >
-                        <span class="nav-text">Transportation</span>
-                      </a>
-                    </li>
-                    
-<!--
-                    <li>
-                      <a href="setting.html" >
-                        <span class="nav-text">Setting</span>
-                      </a>
-                    </li>
-                    <li>
+                  <span class="nav-text">Wave City News</span>
+                </a>
+                <ul class="nav-sub nav-mega">
+                  <li>
+                    <a target="_blank" href="http://www.wavecity.in/wave-galleria/overview" >
+                      <span class="nav-text">Wave Galleria</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="http://www.wavecity.in/print" >
+                      <span class="nav-text">Wave Times</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="http://www.wavecity.in/blogs" >
+                      <span class="nav-text">Wave Blogs</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="http://www.wavecity.in/plots/overview" >
+                      <span class="nav-text">Plots</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="http://www.wavecity.in/news-press" >
+                      <span class="nav-text">Sports</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="http://www.wavecity.in/news-press" >
+                      <span class="nav-text">Temple</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="http://www.wavecity.in/news-press" >
+                      <span class="nav-text">Transportation</span>
+                    </a>
+                  </li>
+
+                  <!--
                       <a href="search.html" >
                         <span class="nav-text">Search</span>
                       </a>
@@ -400,12 +322,12 @@
                       </a>
                     </li>
 -->
-                    
-                  </ul>
-                </li>
-            
-                <li>
-                  <a>
+
+                </ul>
+              </li>
+
+              <li>
+                <a>
                     <span class="nav-caret">
                       <i class="fa fa-caret-down"></i>
                     </span>
@@ -414,164 +336,179 @@
                         <span ui-include="'../assets/images/i_6.svg'"></span>
                       </i>
                     </span>
-                    <span class="nav-text">Schools</span>
-                  </a>
-                  <ul class="nav-sub">
-                    <li>
-                      <a target="_blank" href="http://www.dpswavecity.com/" >
-                        <span class="nav-text">Delhi Public School</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a target="_blank" href="http://www.thewavegroup.com/education.php" >
-                        <span class="nav-text">Gelleria School</span>
-                      </a>
-                    </li>
-                    
-                  </ul>
-                </li>
-            
-                <li>
-                  <a href="events.html">
-<!--
-                    <span class="nav-caret">
-                      <i class="fa fa-caret-down"></i>
-                    </span>
--->
+                  <span class="nav-text">Schools</span>
+                </a>
+                <ul class="nav-sub">
+                  <li>
+                    <a target="_blank" href="http://www.dpswavecity.com/" >
+                      <span class="nav-text">Delhi Public School</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="http://www.thewavegroup.com/education.php" >
+                      <span class="nav-text">Gelleria School</span>
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
+
+              <li>
+                <a href="events.html">
+                  <!--
+                                      <span class="nav-caret">
+                                        <i class="fa fa-caret-down"></i>
+                                      </span>
+                  -->
                     <span class="nav-icon">
                       <i class="material-icons">&#xe896;
                         <span ui-include="'../assets/images/i_7.svg'"></span>
                       </i>
                     </span>
-                    <span class="nav-text">Events Gallery</span>
-                  </a>
-<!--
-                  <ul class="nav-sub">
-                    <li>
-                      <a href="static.html" >
-                        <span class="nav-text">Static table</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="datatable.html" >
-                        <span class="nav-text">Datatable</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="footable.html" >
-                        <span class="nav-text">Footable</span>
-                      </a>
-                    </li>
-                  </ul>
--->
-                </li>
-                
-                
-<!--
-                <li>
-                  <a>
+                  <span class="nav-text">Events Gallery</span>
+                </a>
+                <!--
+                                  <ul class="nav-sub">
+                                    <li>
+                                      <a href="static.html" >
+                                        <span class="nav-text">Static table</span>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="datatable.html" >
+                                        <span class="nav-text">Datatable</span>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="footable.html" >
+                                        <span class="nav-text">Footable</span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                -->
+              </li>
+
+
+              <!--
+                              <li>
+                                <a>
+                                  <span class="nav-caret">
+                                    <i class="fa fa-caret-down"></i>
+                                  </span>
+                                  <span class="nav-label hidden-folded">
+                                    <b class="label label-sm info">N</b>
+                                  </span>
+                                  <span class="nav-icon">
+                                    <i class="material-icons">&#xe1b8;
+                                      <span ui-include="'../assets/images/i_8.svg'"></span>
+                                    </i>
+                                  </span>
+                                  <span class="nav-text">Charts</span>
+                                </a>
+                                <ul class="nav-sub">
+                                  <li>
+                                    <a href="chart.html" >
+                                      <span class="nav-text">Chart</span>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a>
+                                      <span class="nav-caret">
+                                        <i class="fa fa-caret-down"></i>
+                                      </span>
+                                      <span class="nav-text">Echarts</span>
+                                    </a>
+                                    <ul class="nav-sub">
+                                      <li>
+                                        <a href="echarts-line.html" >
+                                          <span class="nav-text">line</span>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="echarts-bar.html" >
+                                          <span class="nav-text">Bar</span>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="echarts-pie.html" >
+                                          <span class="nav-text">Pie</span>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="echarts-scatter.html" >
+                                          <span class="nav-text">Scatter</span>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="echarts-radar-chord.html" >
+                                          <span class="nav-text">Radar &amp; Chord</span>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="echarts-gauge-funnel.html" >
+                                          <span class="nav-text">Gauges &amp; Funnel</span>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a href="echarts-map.html" >
+                                          <span class="nav-text">Map</span>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </li>
+              -->
+
+              <li class="nav-header hidden-folded">
+                <small class="text-muted">About / Help</small>
+              </li>
+
+              <li>
+                <a>
                     <span class="nav-caret">
                       <i class="fa fa-caret-down"></i>
                     </span>
-                    <span class="nav-label hidden-folded">
-                      <b class="label label-sm info">N</b>
-                    </span>
                     <span class="nav-icon">
-                      <i class="material-icons">&#xe1b8;
-                        <span ui-include="'../assets/images/i_8.svg'"></span>
+                      <i class="material-icons">&#xe39e;
+                        <span ui-include="'../assets/images/i_6.svg'"></span>
                       </i>
                     </span>
-                    <span class="nav-text">Charts</span>
-                  </a>
-                  <ul class="nav-sub">
-                    <li>
-                      <a href="chart.html" >
-                        <span class="nav-text">Chart</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <span class="nav-caret">
-                          <i class="fa fa-caret-down"></i>
-                        </span>
-                        <span class="nav-text">Echarts</span>
-                      </a>
-                      <ul class="nav-sub">
-                        <li>
-                          <a href="echarts-line.html" >
-                            <span class="nav-text">line</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="echarts-bar.html" >
-                            <span class="nav-text">Bar</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="echarts-pie.html" >
-                            <span class="nav-text">Pie</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="echarts-scatter.html" >
-                            <span class="nav-text">Scatter</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="echarts-radar-chord.html" >
-                            <span class="nav-text">Radar &amp; Chord</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="echarts-gauge-funnel.html" >
-                            <span class="nav-text">Gauges &amp; Funnel</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="echarts-map.html" >
-                            <span class="nav-text">Map</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
--->
-            
-                <li class="nav-header hidden-folded">
-                  <small class="text-muted">About / Help</small>
-                </li>
-                
-                <li class="hidden-folded" >
-                  <a href="http://www.wavecity.in/contact-us-address" >
-                    <span class="nav-text">Contact Support</span>
-                  </a>
-                </li>
-                
-                <li class="hidden-folded" >
-                  <a href="http://www.wavecity.in/vision-wave-city" >
-                    <span class="nav-text">About Wave City</span>
-                  </a>
-                </li>
-                
-                <li class="hidden-folded" >
-                  <a href="http://www.wavecity.in/contact-us-address" >
-                    <span class="nav-text">Emergency Contacts</span>
-                  </a>
-                </li>
-                
-                <li class="hidden-folded" >
-                  <a href="http://www.wavecity.in/contact-us-address" >
-                    <span class="nav-text">Key Contacts</span>
-                  </a>
-                </li>
-            
-              </ul>
+                  <span class="nav-text">Help/Support</span>
+                </a>
+                <ul class="nav-sub">
+                  <li>
+                    <a href="http://www.wavecity.in/contact-us-address" >
+                      <span class="nav-text">Contact Support</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://www.wavecity.in/vision-wave-city" >
+                      <span class="nav-text">About Wave City</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://www.wavecity.in/contact-us-address" >
+                      <span class="nav-text">Emergency Contacts</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://www.wavecity.in/contact-us-address" >
+                      <span class="nav-text">Key Contacts</span>
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
+
+
+
+            </ul>
           </nav>
-      </div>
-      <div class="b-t">
-        <div class="nav-fold">
-        	<a href="profile.html">
+        </div>
+        <div class="b-t">
+          <div class="nav-fold">
+            <a href="profile.html">
         	    <span class="pull-left">
         	      <img src="../assets/images/a0.jpg" alt="..." class="w-40 img-circle">
         	    </span>
@@ -579,12 +516,12 @@
         	      <span class="block _500">User Name</span>
         	      <small class="block text-muted"><i class="fa fa-circle text-success m-r-sm"></i>online</small>
         	    </span>
-        	</a>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- / -->
+    <!-- / -->
   
   <!-- content -->
   <div id="content" class="app-content box-shadow-z0" role="main">
