@@ -45,9 +45,6 @@
   display:none;
 }
 
-.navbar-nav li.nav-item{
-  display:none;
-}
 
 
 #sw-theme div.box-body p:nth-child(2),#sw-theme div.box-body p:nth-child(3) {
@@ -64,9 +61,27 @@
   margin-left: 10px;
 }
 
+.m-t-10{
+    margin-top: 10px;
+}
+
+.m-b-10{
+    margin-bottom: 10px;
+}
+
+
+
+.p-b-20{
+    padding-bottom: 20px;
+}
 
     .f-w{
       color:#fff;
     }
 
+
+    .display-x{
+      display:none;
+
+    }
 /*---------------------Helper class end */

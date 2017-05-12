@@ -15,7 +15,7 @@
   <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
   <meta name="mobile-web-app-capable" content="yes">
   <link rel="shortcut icon" sizes="196x196" href="../assets/images/logo.png">
-  
+
   <!-- style -->
   <link rel="stylesheet" href="../assets/animate.css/animate.min.css" type="text/css" />
   <link rel="stylesheet" href="../assets/glyphicons/glyphicons.css" type="text/css" />
@@ -115,8 +115,8 @@
                   </li>
 
                   <li>
-                    <a href="meter-reading.html" >
-                      <span class="nav-text">Meter Reading</span>
+                    <a href="bill-dashboard.html" >
+                      <span class="nav-text">Other</span>
                     </a>
                   </li>
                 </ul>
@@ -526,60 +526,60 @@
   <!-- content -->
   <div id="content" class="app-content box-shadow-z0" role="main">
     <div class="app-header white box-shadow">
-        <div class="navbar navbar-toggleable-sm flex-row align-items-center">
-            <!-- Open side - Naviation on mobile -->
-            <a data-toggle="modal" data-target="#aside" class="hidden-lg-up mr-3">
-              <i class="material-icons">&#xe5d2;</i>
+      <div class="navbar navbar-toggleable-sm flex-row align-items-center">
+        <!-- Open side - Naviation on mobile -->
+        <a data-toggle="modal" data-target="#aside" class="hidden-lg-up mr-3">
+          <i class="material-icons">&#xe5d2;</i>
+        </a>
+        <!-- / -->
+
+        <!-- Page title - Bind to $state's title -->
+        <div class="mb-0 h5 no-wrap" ng-bind="$state.current.data.title" id="pageTitle"></div>
+
+        <!-- navbar collapse -->
+        <div class="collapse navbar-collapse" id="collapse">
+          <!-- link and dropdown -->
+          <ul class="nav navbar-nav mr-auto">
+            <li class="nav-item dropdown display-x">
+              <a class="nav-link" href data-toggle="dropdown">
+                <!--                    <i class="fa fa-fw fa-plus text-muted"></i>-->
+                <span>Dashboard</span>
+              </a>
+              <div ui-include="'../views/blocks/dropdown.new.html'"></div>
+            </li>
+          </ul>
+
+          <div ui-include="'../views/blocks/navbar.form.html'"></div>
+          <!-- / -->
+        </div>
+        <!-- / navbar collapse -->
+
+        <!-- navbar right -->
+        <ul class="nav navbar-nav ml-auto flex-row">
+          <li class="nav-item dropdown pos-stc-xs">
+            <a class="nav-link mr-2" href data-toggle="dropdown">
+              <i class="material-icons">&#xe7f5;</i>
+              <span class="label label-sm up warn">3</span>
             </a>
-            <!-- / -->
-        
-            <!-- Page title - Bind to $state's title -->
-            <div class="mb-0 h5 no-wrap" ng-bind="$state.current.data.title" id="pageTitle"></div>
-        
-            <!-- navbar collapse -->
-            <div class="collapse navbar-collapse" id="collapse">
-              <!-- link and dropdown -->
-              <ul class="nav navbar-nav mr-auto">
-                <li class="nav-item dropdown display-x">
-                  <a class="nav-link" href data-toggle="dropdown">
-                    <i class="fa fa-fw fa-plus text-muted"></i>
-                    <span>New</span>
-                  </a>
-                  <div ui-include="'../views/blocks/dropdown.new.html'"></div>
-                </li>
-              </ul>
-        
-              <div ui-include="'../views/blocks/navbar.form.html'"></div>
-              <!-- / -->
-            </div>
-            <!-- / navbar collapse -->
-        
-            <!-- navbar right -->
-            <ul class="nav navbar-nav ml-auto flex-row">
-              <li class="nav-item dropdown pos-stc-xs">
-                <a class="nav-link mr-2" href data-toggle="dropdown">
-                  <i class="material-icons">&#xe7f5;</i>
-                  <span class="label label-sm up warn">3</span>
-                </a>
-                <div ui-include="'../views/blocks/dropdown.notification.html'"></div>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link p-0 clear" href="#" data-toggle="dropdown">
+            <div ui-include="'../views/blocks/dropdown.notification.html'"></div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link p-0 clear" href="#" data-toggle="dropdown">
                   <span class="avatar w-32">
                     <img src="../assets/images/a0.jpg" alt="...">
                     <i class="on b-white bottom"></i>
                   </span>
-                </a>
-                <div ui-include="'../views/blocks/dropdown.user.html'"></div>
-              </li>
-              <li class="nav-item hidden-md-up">
-                <a class="nav-link pl-2" data-toggle="collapse" data-target="#collapse">
-                  <i class="material-icons">&#xe5d4;</i>
-                </a>
-              </li>
-            </ul>
-            <!-- / navbar right -->
-        </div>
+            </a>
+            <div ui-include="'../views/blocks/dropdown.user.html'"></div>
+          </li>
+          <li class="nav-item hidden-md-up">
+            <a class="nav-link pl-2" data-toggle="collapse" data-target="#collapse">
+              <i class="material-icons">&#xe5d4;</i>
+            </a>
+          </li>
+        </ul>
+        <!-- / navbar right -->
+      </div>
     </div>
     <div class="app-footer">
       <div class="p-2 text-xs">
@@ -588,338 +588,137 @@
           <a ui-scroll-to="content"><i class="fa fa-long-arrow-up p-x-sm"></i></a>
         </div>
         <div class="nav">
-          <a class="nav-link" href="../">About</a>
-<!--          <a class="nav-link" href="http://themeforest.net/user/flatfull/portfolio?ref=flatfull">Get it</a>-->
+          <a class="nav-link" target="_blank" href="http://www.wavecity.in/vision-wave-city">About</a>
+          <!--          <a class="nav-link" href="http://themeforest.net/user/flatfull/portfolio?ref=flatfull">Get it</a>-->
         </div>
       </div>
     </div>
     <div ui-view class="app-body" id="view">
 
 <!-- ############ PAGE START-->
-<div class="p-a white lt box-shadow">
-	<div class="row">
-		<div class="col-sm-6">
-			<h4 class="mb-0 _300">Welcome to Wave Smart City - Events</h4>
-			<small class="text-muted">A Sustainable And Self- Sufficient Hi-Tech City</small>
-		</div>
-      <div class="col-sm-6 text-sm-right">
-        <div class="m-y-sm">
-          <span class="m-r-sm">8<sup>th</sup> May : Manage:</span>
-          <div class="btn-group dropdown">
-            <button class="btn white btn-sm ">Complaints</button>
-            <button class="btn white btn-sm dropdown-toggle" data-toggle="dropdown"></button>
-            <div class="dropdown-menu dropdown-menu-scale pull-right">
-              <a class="dropdown-item" href="complaint-form.html">New Complaint</a>
-              <a class="dropdown-item" href="complaint-dashboard.html">Overview</a>
-              <a class="dropdown-item" href="complaint-dashboard.html">Updates</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="dashboard.html">Notifications</a>
+
+      <div class="p-a white lt box-shadow">
+        <div class="row">
+          <div class="col-sm-6">
+            <h4 class="mb-0 _300">Welcome to Wave Smart City - User Dashboard</h4>
+            <small class="text-muted">A Sustainable And Self- Sufficient Hi-Tech City</small>
+          </div>
+          <div class="col-sm-6 text-sm-right">
+            <div class="m-y-sm">
+              <span class="m-r-sm">8<sup>th</sup> May : Manage:</span>
+              <div class="btn-group dropdown">
+                <button class="btn white btn-sm ">Complaints</button>
+                <button class="btn white btn-sm dropdown-toggle" data-toggle="dropdown"></button>
+                <div class="dropdown-menu dropdown-menu-scale pull-right">
+                  <a class="dropdown-item" href="complaint-form.html">New Complaint</a>
+                  <a class="dropdown-item" href="complaint-dashboard.html">Overview</a>
+                  <a class="dropdown-item" href="complaint-dashboard.html">Updates</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="dashboard.html">Notifications</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-	</div>
-</div>
 <div class="padding">
 	<div class="row">
-		<div class="col-xs-12 col-sm-4">
-	        <!--<div class="box p-a">
-	          <div class="pull-left m-r">
-	            <span class="w-48 rounded  accent">
-	              <i class="material-icons">&#xe151;</i>
-	            </span>
-	          </div>
-	          <div class="clear">
-	            <h4 class="m-0 text-lg _300"><a href>125 <span class="text-sm">Emails</span></a></h4>
-	            <small class="text-muted">6 new arrivals.</small>
-	          </div>
-	        </div>-->
+        <div class="col-md-3 push-md-9">
           <div class="box">
-            <div class="item dark">
-              <a href=""><img src="../assets/images/lohri4.jpg" class="w-full" width="330" height="190"></a>
-              <div class="item-overlay black-overlay w-full">
-                <a href="" class="center text-md"><i class="fa fa-plus"></i></a>
-              </div>
-            <!--  <div class="bottom gd-overlay p-a-xs">
-                <a href="" class="text-md block p-x-sm">San Francisco</a>
-              </div>-->
-              <div class="top item-overlay text-right p-x-xs">
-                <a href="" ui-toggle-class="" class="text-md p-a-sm inline">
-                  <i class="fa fa-heart-o inline"></i>
-                  <i class="fa fa-heart text-danger none"></i>
-                </a>
-              </div>
-            </div>
-       <!--     <a class="md-btn md-raised md-fab md-mini m-r pos-rlt md-fab-offset pull-right white"><i class="material-icons md-24"></i></a>
-            --><div class="p-a">
-              <div class="text-muted m-b-xs">
-                <span class="m-r">May 10</span>
-                <a href="" class="m-r"><i class="fa fa-heart-o"></i> 4</a>
-                <a href=""><i class="fa fa-bookmark-o"></i> 20</a>
-              </div>
-              <div class="m-b h-2x"><a href="" class="_800">Residents of Wave City celebrate Lohri-Press Release (Hindi)</a></div>
-              <p>Titudin venenatis ipsum ac feugiat. Vestibulum ullamcorper quam.</p>
-              <p class="h-3x">VENUE : Community Park, Wave City</p>
-              <div><a href="" class="btn btn-xs primary">Read More</a></div>
-            </div>
-          </div>
-	    </div>
-	    <div class="col-xs-6 col-sm-4">
+            <div class="box-header">Filter column</div>
+            <div class="box-body">
+              <ul class="list-unstyled m-t-n-sm">
+                <li class="checkbox">
+                  <label class="ui-check">
+                    <input type="checkbox" checked><i></i> Unit No
+                  </label>
+                </li>
+                <li class="checkbox">
+                  <label class="ui-check">
+                    <input type="checkbox" checked><i></i> Reading Date
+                  </label>
+                </li>
+                <li class="checkbox">
+                  <label class="ui-check">
+                    <input type="checkbox"><i></i>GRID
+                  </label>
+                </li>
+                <li class="checkbox">
+                  <label class="ui-check">
+                    <input type="checkbox"><i></i>DG
+                  </label>
+                </li>
 
-          <div class="box">
-            <div class="item dark">
-              <a href=""><img src="../assets/images/fest1.jpg" class="w-full" width="330" height="190"></a>
-              <div class="item-overlay black-overlay w-full">
-                <a href="" class="center text-md"><i class="fa fa-plus"></i></a>
-              </div>
-             <!-- <div class="bottom gd-overlay p-a-xs">
-                <a href="" class="text-md block p-x-sm">San Francisco</a>
-              </div>-->
-              <div class="top item-overlay text-right p-x-xs">
-                <a href="" ui-toggle-class="" class="text-md p-a-sm inline">
-                  <i class="fa fa-heart-o inline"></i>
-                  <i class="fa fa-heart text-danger none"></i>
-                </a>
-              </div>
-            </div>
-        <!--    <a class="md-btn md-raised md-fab md-mini m-r pos-rlt md-fab-offset pull-right white"><i class="material-icons md-24"></i></a>
-           --> <div class="p-a">
-              <div class="text-muted m-b-xs">
-                <span class="m-r">May 10</span>
-                <a href="" class="m-r"><i class="fa fa-heart-o"></i> 4</a>
-                <a href=""><i class="fa fa-bookmark-o"></i> 20</a>
-              </div>
-              <div class="m-b h-2x"><a href="" class="_800">Wave City organizes Propfest in Bhadohi</a></div>
-              <p>Titudin venenatis ipsum ac feugiat. Vestibulum ullamcorper quam.</p>
-              <p class="h-3x">VENUE : Community Center, Wave City</p>
-              <div><a href="" class="btn btn-xs primary">Read More</a></div>
-            </div>
-          </div>
-	    </div>
-	    <div class="col-xs-6 col-sm-4">
-          <div class="box">
-            <div class="item dark">
-              <a href=""><img src="../assets/images/circuit2.jpg" class="w-full" width="330" height="190"></a>
-              <div class="item-overlay black-overlay w-full">
-                <a href="" class="center text-md"><i class="fa fa-plus"></i></a>
-              </div>
-              <!--<div class="bottom gd-overlay p-a-xs">
-                <a href="" class="text-md block p-x-sm">San Francisco</a>
-              </div>-->
-              <div class="top item-overlay text-right p-x-xs">
-                <a href="" ui-toggle-class="" class="text-md p-a-sm inline">
-                  <i class="fa fa-heart-o inline"></i>
-                  <i class="fa fa-heart text-danger none"></i>
-                </a>
-              </div>
-            </div>
-       <!--     <a class="md-btn md-raised md-fab md-mini m-r pos-rlt md-fab-offset pull-right white"><i class="material-icons md-24"></i></a>
-            --><div class="p-a">
-              <div class="text-muted m-b-xs">
-                <span class="m-r">May 10</span>
-                <a href="" class="m-r"><i class="fa fa-heart-o"></i> 4</a>
-                <a href=""><i class="fa fa-bookmark-o"></i> 20</a>
-              </div>
-              <div class="m-b h-2x"><a href="" class="_800">4th edition of Devils Circuit hosted at Wave City, NH24</a></div>
-              <p>Titudin venenatis ipsum ac feugiat. Vestibulum ullamcorper quam.</p>
-              <p class="h-3x">VENUE : NH24, Wave City</p>
-              <div><a href="" class="btn btn-xs primary">Read More</a></div>
-            </div>
-          </div>
-	    </div>
-	</div>
-	<div class="row">
-		<div class="col-sm-6 col-md-4">
-          <div class="box">
-            <div class="item dark">
-              <a href=""><img src="../assets/images/lohri2.jpg" class="w-full" width="330" height="190"></a>
-              <div class="item-overlay black-overlay w-full">
-                <a href="" class="center text-md"><i class="fa fa-plus"></i></a>
-              </div>
-              <!--<div class="bottom gd-overlay p-a-xs">
-                <a href="" class="text-md block p-x-sm">San Francisco</a>
-              </div>-->
-              <div class="top item-overlay text-right p-x-xs">
-                <a href="" ui-toggle-class="" class="text-md p-a-sm inline">
-                  <i class="fa fa-heart-o inline"></i>
-                  <i class="fa fa-heart text-danger none"></i>
-                </a>
-              </div>
-            </div>
-         <!--   <a class="md-btn md-raised md-fab md-mini m-r pos-rlt md-fab-offset pull-right white"><i class="material-icons md-24"></i></a>
-            --><div class="p-a">
-              <div class="text-muted m-b-xs">
-                <span class="m-r">May 10</span>
-                <a href="" class="m-r"><i class="fa fa-heart-o"></i> 4</a>
-                <a href=""><i class="fa fa-bookmark-o"></i> 20</a>
-              </div>
-              <div class="m-b h-2x"><a href="" class="_800">Residents of Wave City celebrate Lohri-Press Release (Hindi)</a></div>
-              <p>Titudin venenatis ipsum ac feugiat. Vestibulum ullamcorper quam.</p>
-              <p class="h-3x">VENUE : NH24, Wave City</p>
-              <div><a href="" class="btn btn-xs primary">Read More</a></div>
+
+              </ul>
+
 
             </div>
           </div>
-	    </div>
-	    <div class="col-sm-6 col-md-4">
-          <div class="box">
-            <div class="item dark">
-              <a href=""><img src="../assets/images/fest2.jpg" class="w-full" width="330" height="190"></a>
-              <div class="item-overlay black-overlay w-full">
-                <a href="" class="center text-md"><i class="fa fa-plus"></i></a>
-              </div>
-             <!-- <div class="bottom gd-overlay p-a-xs">
-                <a href="" class="text-md block p-x-sm">San Francisco</a>
-              </div>-->
-              <div class="top item-overlay text-right p-x-xs">
-                <a href="" ui-toggle-class="" class="text-md p-a-sm inline">
-                  <i class="fa fa-heart-o inline"></i>
-                  <i class="fa fa-heart text-danger none"></i>
-                </a>
-              </div>
-            </div>
-      <!--      <a class="md-btn md-raised md-fab md-mini m-r pos-rlt md-fab-offset pull-right white"><i class="material-icons md-24"></i></a>
-           --> <div class="p-a">
-              <div class="text-muted m-b-xs">
-                <span class="m-r">May 10</span>
-                <a href="" class="m-r"><i class="fa fa-heart-o"></i> 4</a>
-                <a href=""><i class="fa fa-bookmark-o"></i> 20</a>
-              </div>
-              <div class="m-b h-2x"><a href="" class="_800">Wave City organizes Propfest in Bhadohi</a></div>
-              <p>Titudin venenatis ipsum ac feugiat. Vestibulum ullamcorper quam.</p>
-              <p class="h-3x">VENUE : Community Center, Wave City</p>
-              <div><a href="" class="btn btn-xs primary">Read More</a></div>
-            </div>
-          </div>
-	    </div>
-	    <div class="col-sm-12 col-md-4">
-          <div class="box">
-            <div class="item dark">
-              <a href=""><img src="../assets/images/circuit3.jpg" class="w-full" width="330" height="190"></a>
-              <div class="item-overlay black-overlay w-full">
-                <a href="" class="center text-md"><i class="fa fa-plus"></i></a>
-              </div>
-             <!-- <div class="bottom gd-overlay p-a-xs">
-                <a href="" class="text-md block p-x-sm">San Francisco</a>
-              </div>-->
-              <div class="top item-overlay text-right p-x-xs">
-                <a href="" ui-toggle-class="" class="text-md p-a-sm inline">
-                  <i class="fa fa-heart-o inline"></i>
-                  <i class="fa fa-heart text-danger none"></i>
-                </a>
-              </div>
-            </div>
-        <!--    <a class="md-btn md-raised md-fab md-mini m-r pos-rlt md-fab-offset pull-right white"><i class="material-icons md-24"></i></a>
-           --> <div class="p-a">
-              <div class="text-muted m-b-xs">
-                <span class="m-r">May 10</span>
-                <a href="" class="m-r"><i class="fa fa-heart-o"></i> 4</a>
-                <a href=""><i class="fa fa-bookmark-o"></i> 20</a>
-              </div>
-              <div class="m-b h-2x"><a href="" class="_800">4th edition of Devils Circuit hosted at Wave City, NH24</a></div>
-              <p>Titudin venenatis ipsum ac feugiat. Vestibulum ullamcorper quam.</p>
-              <p class="h-3x">VENUE : NH24, Wave City</p>
-              <div><a href="" class="btn btn-xs primary">Read More</a></div>
-            </div>
-          </div>
-	    </div>
-	</div>
+        </div>
 
-	<div class="row">
-	    <div class="col-sm-6 col-md-4">
+
+
+        <div class="col-md-9 pull-md-3">
+
           <div class="box">
-            <div class="item dark">
-              <a href=""><img src="../assets/images/lohri3.jpg" class="w-full" width="330" height="190"></a>
-              <div class="item-overlay black-overlay w-full">
-                <a href="" class="center text-md"><i class="fa fa-plus"></i></a>
-              </div>
-             <!-- <div class="bottom gd-overlay p-a-xs">
-                <a href="" class="text-md block p-x-sm">San Francisco</a>
-              </div>-->
-              <div class="top item-overlay text-right p-x-xs">
-                <a href="" ui-toggle-class="" class="text-md p-a-sm inline">
-                  <i class="fa fa-heart-o inline"></i>
-                  <i class="fa fa-heart text-danger none"></i>
-                </a>
-              </div>
+            <div class="box-header">
+              <h2>Reading</h2>
+
             </div>
-        <!--    <a class="md-btn md-raised md-fab md-mini m-r pos-rlt md-fab-offset pull-right white"><i class="material-icons md-24"></i></a>
-           --> <div class="p-a">
-              <div class="text-muted m-b-xs">
-                <span class="m-r">May 10</span>
-                <a href="" class="m-r"><i class="fa fa-heart-o"></i> 4</a>
-                <a href=""><i class="fa fa-bookmark-o"></i> 20</a>
-              </div>
-              <div class="m-b h-2x"><a href="" class="_800">Residents of Wave City celebrate Lohri-Press Release (Hindi)</a></div>
-              <p>Titudin venenatis ipsum ac feugiat. Vestibulum ullamcorper quam.</p>
-              <p class="h-3x">VENUE : NH24, Wave City</p>
-              <div><a href="" class="btn btn-xs primary">Read More</a></div>
+            <div class="table-responsive">
+              <table class="table table-bordered m-0">
+                <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Unit No</th>
+                  <th>Reading Date</th>
+                  <th>GRID</th>
+                  <th>DG</th>
+
+                  <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>00D104</td>
+                  <td>05-Mar-2017</td>
+                  <td>2570.00</td>
+
+                  <td>	1297.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>00f804</td>
+                  <td>05-Feb-2017</td>
+                  <td>		2900.00</td>
+
+                  <td>	1200.00</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>00h104</td>
+                  <td>05-Jan-2017</td>
+
+                  <td>8100.00</td>
+                  <td>	1997.00</td>
+                  <td></td>
+                </tr>
+                </tbody>
+              </table>
             </div>
           </div>
-	    </div>
-	    <div class="col-sm-6 col-md-4">
-          <div class="box">
-            <div class="item dark">
-              <a href=""><img src="../assets/images/fest3.jpg" class="w-full" width="330" height="190"></a>
-              <div class="item-overlay black-overlay w-full">
-                <a href="" class="center text-md"><i class="fa fa-plus"></i></a>
-              </div>
-           <!--   <div class="bottom gd-overlay p-a-xs">
-                <a href="" class="text-md block p-x-sm">San Francisco</a>
-              </div>-->
-              <div class="top item-overlay text-right p-x-xs">
-                <a href="" ui-toggle-class="" class="text-md p-a-sm inline">
-                  <i class="fa fa-heart-o inline"></i>
-                  <i class="fa fa-heart text-danger none"></i>
-                </a>
-              </div>
-            </div>
-        <!--    <a class="md-btn md-raised md-fab md-mini m-r pos-rlt md-fab-offset pull-right white"><i class="material-icons md-24"></i></a>
-            --><div class="p-a">
-              <div class="text-muted m-b-xs">
-                <span class="m-r">May 10</span>
-                <a href="" class="m-r"><i class="fa fa-heart-o"></i> 4</a>
-                <a href=""><i class="fa fa-bookmark-o"></i> 20</a>
-              </div>
-              <div class="m-b h-2x"><a href="" class="_800">Wave City organizes Propfest in Bhadohi</a></div>
-              <p>Titudin venenatis ipsum ac feugiat. Vestibulum ullamcorper quam.</p>
-              <p class="h-3x">VENUE : NH24, Wave City</p>
-              <div><a href="" class="btn btn-xs primary">Read More</a></div>
-            </div>
-          </div>
-		</div>
-	    <div class="col-sm-12 col-md-4">
-          <div class="box">
-            <div class="item dark">
-              <a href=""><img src="../assets/images/circuit1.jpg" class="w-full" width="330" height="190"></a>
-              <div class="item-overlay black-overlay w-full">
-                <a href="" class="center text-md"><i class="fa fa-plus"></i></a>
-              </div>
-            <!--  <div class="bottom gd-overlay p-a-xs">
-                <a href="" class="text-md block p-x-sm">San Francisco</a>
-              </div>-->
-              <div class="top item-overlay text-right p-x-xs">
-                <a href="" ui-toggle-class="" class="text-md p-a-sm inline">
-                  <i class="fa fa-heart-o inline"></i>
-                  <i class="fa fa-heart text-danger none"></i>
-                </a>
-              </div>
-            </div>
-        <!--    <a class="md-btn md-raised md-fab md-mini m-r pos-rlt md-fab-offset pull-right white"><i class="material-icons md-24"></i></a>
-           --> <div class="p-a">
-              <div class="text-muted m-b-xs">
-                <span class="m-r">May 10</span>
-                <a href="" class="m-r"><i class="fa fa-heart-o"></i> 4</a>
-                <a href=""><i class="fa fa-bookmark-o"></i> 20</a>
-              </div>
-              <div class="m-b h-2x"><a href="" class="_800">4th edition of Devils Circuit hosted at Wave City, NH24</a></div>
-              <p>Titudin venenatis ipsum ac feugiat. Vestibulum ullamcorper quam.</p>
-              <p class="h-3x">VENUE : NH24, Wave City</p>
-              <div><a href="" class="btn btn-xs primary">Read More</a></div>
-            </div>
-          </div>
-	    </div>
-	</div>
+
+
+        </div><!--COL-9 END-->
+
+
+
+
+    </div><!--ROW END-->
 </div>
 
 <!-- ############ PAGE END-->
