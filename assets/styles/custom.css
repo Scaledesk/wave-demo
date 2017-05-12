@@ -45,6 +45,10 @@
   display:none;
 }
 
+.navbar-nav li.nav-item{
+  display:none;
+}
+
 
 #sw-theme div.box-body p:nth-child(2),#sw-theme div.box-body p:nth-child(3) {
 
